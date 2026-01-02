@@ -3,14 +3,12 @@ public class Board {
     public int columns;
     public int[][] grid;
 
-    public Board(int ROWS, int COLUMNS) {
-        this.rows = ROWS;
-        this.columns = COLUMNS;
+    public Board(int rows, int columns) {
+        this.rows = rows;
+        this.columns = columns;
         grid = new int[rows][columns];
-
     }
     
-    //Looks at top row of column, if its not empty the entire row is filled
     public boolean columnFull(int column) {
         return grid[rows-1][column] != 0;
     }
